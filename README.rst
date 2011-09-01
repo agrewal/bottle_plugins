@@ -28,10 +28,22 @@ This plugin allows you to specify a renderer for per route. Here is an example
 
 In your templates (jinja2, mako, etc.)  you can access the following by default:
 
-R : return value of the function
-app : The current app
-request: The current request
-response: The current response
+:R: return value of the function
+:app:  The current app
+:request: The current request
+:response: The current response
+
+The following renderers are available:
+
+::
+    @app.get(renderer='json', ..) # Renders return value as json
+    @app.get(renderer='string', ..) # Renders return value as text/plain
+    @app.get(renderer='<template_filename>.stpl', ..) # simple 
+    @app.get(renderer='<template_filename>.mako', ..) 
+    @app.get(renderer='<template_filename>.jinja2', ..) 
+    @app.get(renderer='<template_filename>.cheetah', ..) 
+    @app.get(renderer='<template_filename>.simpletal', ..)
+
 
 
 bottle_flash
