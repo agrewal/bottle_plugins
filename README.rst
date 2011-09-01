@@ -6,6 +6,7 @@ bottle_renderer
 This plugin allows you to specify a renderer for per route. Here is an example
 
 ::
+
     from bottle import Bottle
     from bottle_renderer import RendererPlugin
 
@@ -39,6 +40,7 @@ bottle_flash
 This plugin enables flash messages in bottle. Again, learn by example
 
 ::
+
     from bottle import Bottle
     from bottle_flash import FlashPlugin
 
@@ -54,6 +56,7 @@ This plugin enables flash messages in bottle. Again, learn by example
 To consume the flashed messages, you would do something like the following (jinja2). Here I am assuming that I get the "app" in the template context. This can be achieved with the bottle_renderer_ plugin.
 
 ::
+
     {% set messages = app.get_flashed_messages() %}
     {% if messages %}
     <div id="flash_messages">
