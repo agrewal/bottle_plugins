@@ -36,6 +36,7 @@ In your templates (jinja2, mako, etc.)  you can access the following by default:
 The following renderers are available:
 
 ::
+
     @app.get(renderer='json', ..) # Renders return value as json
     @app.get(renderer='string', ..) # Renders return value as text/plain
     @app.get(renderer='<template_filename>.stpl', ..) # simple 
