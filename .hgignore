@@ -1,0 +1,5 @@
+syntax: glob
+*.pyc
+build
+MANIFEST
+*.tar.gz
