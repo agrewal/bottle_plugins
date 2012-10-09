@@ -11,7 +11,7 @@ except ImportError:
 
 setup(
     name = 'bottle-renderer',
-    version = '0.1',
+    version = '0.1.1',
     url = 'https://github.com/agreatjewel/bottle_plugins/tree/master/bottle_renderer',
     description = 'Renderer plugin for bottle',
     long_description = open('README.rst').read(),
