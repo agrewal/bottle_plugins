@@ -17,7 +17,7 @@ class FlashPlugin(object):
         self.app.get_flashed_messages = self.get_flashed_messages
 
     def load_flashed(self):
-        m = request.get_cookie(self.key, self.secret)
+        m = request.get_cookie(self.key, secret=self.secret)
         if m is not None:
             response.flash_messages = m
 
